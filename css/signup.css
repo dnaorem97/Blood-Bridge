@@ -1,0 +1,186 @@
+form {
+    width: 40%;
+    margin: 15px auto;
+    padding: 42px 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* Changed bolder to bold for better readability */
+}
+
+fieldset {
+    border: none;
+    padding: 25px 48px;
+    position: relative;
+    text-align: left;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    padding: 0 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    /* Added margin for consistent spacing between labels */
+}
+
+.user_role {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.user_role select {
+    width: 60%;
+    height: 34px;
+}
+
+label {
+    /* font-weight: bold; */
+    font-size: large;
+    margin-bottom: 8px;
+}
+
+/* General input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    /* Full width for better responsiveness */
+    height: 20px;
+    /* Increase height for better readability */
+    padding: 4px 12px;
+    /* More padding for better text input comfort */
+    margin-bottom: 10px;
+    /* More space between input fields */
+    border-radius: 6px;
+    /* Smoother rounded corners */
+    border: 1px solid #ccc;
+    /* Soft gray border */
+    font-size: 16px;
+    /* Larger font size for readability */
+    color: #333;
+    /* Darker text color */
+    background-color: #f9f9f9;
+    /* Light background for better contrast */
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+    outline: none;
+    /* Remove default outline */
+}
+form input[type="radio"],
+form label {
+    display: inline-block;
+    margin-right: 15px;
+    /* Adjust the space between radio buttons and labels */
+    vertical-align: middle;
+    /* Aligns the label text with the radio buttons */
+}
+
+form label[for="male"],
+[for="female"],
+[for="other"] {
+    font-weight: bold;
+    /* Bold text for male */
+}
+
+/* Style for the select dropdown */
+form select {
+    width: 100%;
+    /* Full width for responsiveness */
+    height: 40px;
+    /* Height for better readability */
+    padding: 8px 12px;
+    /* Padding inside the select box */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    /* Soft border color */
+    background-color: #f9f9f9;
+    /* Light background color */
+    font-size: 16px;
+    /* Larger font size for readability */
+    color: #333;
+    /* Text color */
+    appearance: none;
+    /* Removes default dropdown arrow (for custom styling) */
+    cursor: pointer;
+    /* Pointer cursor for better UX */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Subtle inner shadow */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+/* Style when hovering over the select */
+form select:hover {
+    border-color: #888;
+    /* Darken border on hover */
+}
+
+/* Style when the select dropdown is focused */
+form select:focus {
+    border-color: #007BFF;
+    /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Glow effect */
+}
+
+/* Style for the individual options */
+form select option {
+    font-size: 16px;
+    /* Adjust font size for options */
+    padding: 8px;
+    /* Padding inside options */
+    color: #333;
+    /* Text color for options */
+    background-color: #fff;
+    /* Background color for options */
+}
+
+/* Style for the selected option (optional) */
+form select option:checked {
+    background-color: #007BFF;
+    /* Blue background for the selected option */
+    color: #fff;
+    /* White text for the selected option */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3b71ca;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}

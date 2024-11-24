@@ -1,0 +1,68 @@
+.leaderboard-section {
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    color: #333333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leaderboard-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+.leaderboard-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.leaderboard-table {
+    width: 50%;
+    margin:0 auto;
+    border-collapse: collapse;
+}
+
+.leaderboard-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.rank i {
+    font-size: 24px;
+}
+
+.rank span, .name, .donations {
+    font-size: 18px;
+    color: #333333;
+}
+
+.position {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff9500; /* Accent color for ranking */
+}
+
+.rank .gold {
+    color: #ffd700;
+}
+
+.rank .silver {
+    color: #c0c0c0;
+}
+
+.rank .bronze {
+    color: #cd7f32;
+}
+
+.leaderboard-table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+}

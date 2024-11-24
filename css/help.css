@@ -1,0 +1,25 @@
+.instant-contact {
+    position: fixed;
+    right: 20px; /* Increased spacing from the right for better placement */
+    bottom: 100px; /* Adjusted bottom positioning for more visibility */
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+.instant-contact a i {
+    color: #444;
+  
+    font-size: 40px; /* Reduced size slightly for better balance */
+    transition: color 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.instant-contact a i:hover {
+    color: #007bff; 
+}
+
+.instant-contact p {
+    color: #6d2d92; /* Corrected hex code for white */
+    margin: 5px 0; /* Added some margin for spacing */
+    font-weight: bold;
+    font-size: 14px; /* Added font size for clarity */
+    text-align: center; /* Centered text under the icon */
+}

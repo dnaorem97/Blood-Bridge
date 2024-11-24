@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    background-color: white;
+}
+
+.panel {
+    height: 120px;
+    padding: 0.3rem;
+    /* Optimized padding */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    width: 19%;
+    /* Adjusted width for compactness */
+    text-align: center;
+}
+
+.panel h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.panel p {
+    font-size: 18px;
+    padding: 0.3rem;
+    margin: 0;
+    transition: font-size ease-in-out 0.3s;
+}
+
+.donation p,
+.request p {
+    font-size: 16px;
+    padding: 0;
+    /* text-align: center; */
+}
+
+.panel p:hover {
+    font-size: 25px;
+    /* Adjusted hover effect */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+button {
+    background-color: #3b71ca;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

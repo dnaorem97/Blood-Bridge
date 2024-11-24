@@ -1,0 +1,231 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    background-image: linear-gradient( 68.6deg,  rgba(79,183,131,1) 14.4%, rgba(254,235,151,1) 92.7% );
+    margin-bottom: 0;
+}
+
+.pageDesc{
+    display: flex;
+  justify-content: center;
+}
+
+.form_container {
+    width: 90%;
+    background-color:  #fff;
+    padding: 50px;
+    margin: 4px auto 0px auto;
+}
+
+.sideImg {
+    background-color: aqua;
+    width: 22%;
+    padding: 10px 5px;
+    margin: 4px auto;
+
+}
+
+.sideImg img {
+    width: 144px;
+}
+
+.fieldset_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+fieldset {
+    width: 88%;
+    background-color:#fff;
+    border: none;
+    border-radius: 8px;
+    padding: 25px 48px;
+    position: relative;
+    /* Allows legend absolute positioning */
+    text-align: left;
+    /* Keep all content (like labels) left-aligned */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    /* Absolute positioning */
+    top: -40px;
+    /* Adjust legend position relative to the fieldset */
+    left: 50%;
+    /* Horizontal centering */
+    transform: translateX(-50%);
+    /* Ensure perfect centering */
+    background-color: #f1f1f1;
+    /* Background to overlap fieldset border */
+    padding: 0 15px;
+    /* Optional padding for better spacing */
+}
+
+label {
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 8px;
+}
+
+/* General input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 90%;
+    /* Full width for better responsiveness */
+    height: 40px;
+    /* Increase height for better readability */
+    padding: 8px 12px;
+    /* More padding for better text input comfort */
+    margin-bottom: 15px;
+    /* More space between input fields */
+    border-radius: 6px;
+    /* Smoother rounded corners */
+    border: 1px solid #ccc;
+    /* Soft gray border */
+    font-size: 16px;
+    /* Larger font size for readability */
+    color: #333;
+    /* Darker text color */
+    background-color: #f9f9f9;
+    /* Light background for better contrast */
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Hover effect */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover {
+    border-color: #888;
+    /* Darken border on hover */
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    border-color: #007BFF;
+    /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Glow effect */
+}
+
+input[type="date"] {
+    font-weight: bold;
+    padding: 3px 24px;
+    margin: 7px 0px;
+}
+
+form input[type="radio"],
+form label {
+    display: inline-block;
+    margin-right: 15px;
+    /* Adjust the space between radio buttons and labels */
+    vertical-align: middle;
+    /* Aligns the label text with the radio buttons */
+}
+
+form label[for="male"],
+[for="female"],
+[for="other"] {
+    font-weight: bold;
+    /* Bold text for male */
+}
+
+/* Style for the select dropdown */
+form select {
+    width: 100%;
+    /* Full width for responsiveness */
+    height: 40px;
+    /* Height for better readability */
+    padding: 8px 12px;
+    /* Padding inside the select box */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    /* Soft border color */
+    background-color: #f9f9f9;
+    /* Light background color */
+    font-size: 16px;
+    /* Larger font size for readability */
+    color: #333;
+    /* Text color */
+    appearance: none;
+    /* Removes default dropdown arrow (for custom styling) */
+    cursor: pointer;
+    /* Pointer cursor for better UX */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Subtle inner shadow */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+/* Style when hovering over the select */
+form select:hover {
+    border-color: #888;
+    /* Darken border on hover */
+}
+
+/* Style when the select dropdown is focused */
+form select:focus {
+    border-color: #007BFF;
+    /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Glow effect */
+}
+
+/* Style for the individual options */
+form select option {
+    font-size: 16px;
+    /* Adjust font size for options */
+    padding: 8px;
+    /* Padding inside options */
+    color: #333;
+    /* Text color for options */
+    background-color: #fff;
+    /* Background color for options */
+}
+
+/* Style for the selected option (optional) */
+form select option:checked {
+    background-color: #007BFF;
+    /* Blue background for the selected option */
+    color: #fff;
+    /* White text for the selected option */
+}
+
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3b71ca;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    /* Adds pointer on hover */
+}
